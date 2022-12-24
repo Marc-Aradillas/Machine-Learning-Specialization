@@ -2,7 +2,7 @@
 
 A repository I created to store learned info and practices on the application and concepts of machine learning which includes:
 
-*#Python #Jupyter Notebook*
+*#Python #JupyterNotebook*
 
 > Unsupervised Learning (decides that the data can be assigned to two different groups or two different clusters | Automatically finds structure in data)
  - Clustering (Takes data without labels and tries to automatcally group them into clusters | *ex: Google News*)
