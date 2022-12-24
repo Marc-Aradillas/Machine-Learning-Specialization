@@ -16,7 +16,7 @@ A repository I created to store learned info and practices on the application an
 
 
 
-Specialization will have you ready to: 
+Specialization skills: 
 
 • Build machine learning models in Python using popular machine learning libraries NumPy and scikit-learn.
 
