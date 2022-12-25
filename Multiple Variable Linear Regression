@@ -21,11 +21,11 @@ Here is a summary of some of the notation you will encounter, updated for multip
 General
 Notation	  Description 	                                                                                  Python (if applicable)
 
-𝑎 	scalar,  non bold	
+𝑎 	        scalar,  non bold	
 
-𝐚 	vector,  bold	
+𝐚 	        vector,  bold	
 
-𝐀 	matrix,  bold capital	
+𝐀 	        matrix,  bold capital	
 
 Regression		
 
