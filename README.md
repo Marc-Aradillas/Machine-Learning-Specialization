@@ -11,7 +11,7 @@ A repository I created to store learned info and practices on the application an
 
 > Supervised Learning (Learning Input, Output, or X to Y mappings)
  - Linear Regression (Regression Algorithms learn to predict numbers out of many possible numbers| *ex: Cost Function*)
- - Classification (*different from regression*, Classification treis to predict any number , all of the infinitely many number of possible numbers | two possible outputs. It may have more than two ouput possible categories.)
+ - Classification (*different from regression*, Classification tries to predict any number , all of the infinitely many number of possible numbers | two possible outputs. It may have more than two ouput possible categories.)
  - Gradient Descent (optimization algorithm used to find the values of parameters (coefficients) of a function (f) that minimizes a cost function (cost)| It is used to train machine learning models and neural networks)
 
 ![image](https://user-images.githubusercontent.com/106922826/209475799-ed75ff5b-0fa5-4b35-9c77-f357de883e88.png)
