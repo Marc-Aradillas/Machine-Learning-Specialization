@@ -1,8 +1,8 @@
 # Vectorization | Review the features of NumPy and Python 
 
 # Useful References:
-# https://numpy.org/doc/stable/user/absolute_beginners.html,
-# https://numpy.org/doc/stable/user/basics.broadcasting.html)
+# https://numpy.org/doc/stable/user/absolute_beginners.html
+# https://numpy.org/doc/stable/user/basics.broadcasting.html
 # https://numpy.org/doc/stable/reference/arrays.indexing.html
 # https://numpy.org/doc/stable/reference/generated/numpy.reshape.html
 
