@@ -55,7 +55,7 @@ We would like to build a linear regression model using these values so we can th
 Dataset:
 
 Size (sqft)	Number of Bedrooms	Number of floors	  Age of Home	  Price (1000s dollars)
-     952	          2	                  1	                65	          271.5
+     952	         2	                  1	                65	          271.5
      1244 	         3	                  2	                64	            232
      1947 	         3	                  2	                17	          509.8
      ...	        ...	                ...	               ...	            ...
@@ -87,6 +87,7 @@ Here are the equations you developed in the last lab on gradient descent for mul
 repeat until convergence:  {𝑤𝑗 := 𝑤𝑗−𝛼(∂𝐽(𝐰,𝑏)/∂𝑤𝑗)   𝑏 := 𝑏−𝛼(∂𝐽(𝐰,𝑏)/∂𝑏 | for j = 0..n-1}    (1)
 
 where, n is the number of features, parameters 𝑤𝑗, 𝑏, are updated simultaneously and where
+                   
                    𝑚-1
 (∂𝐽(𝐰,𝑏)/∂𝑤𝑗) = 1  ∑(𝑓𝐰,𝑏(𝐱(𝑖))−𝑦(𝑖))𝑥j(i)     (2)
                 𝑚  𝑖=0
@@ -99,4 +100,94 @@ where, n is the number of features, parameters 𝑤𝑗, 𝑏, are updated simul
 
 - 𝑓𝐰,𝑏(𝐱(𝑖)) is the model's prediction, while 𝑦(𝑖) is the target value
 """
+
+# set alpha to 9.9e-7
+
+_, _, hist = run_gradient_descent(X_train, y_train, 10, alpha = 9.9e-7)
+
+# OUTPUT
+"""
+Iteration Cost          w0       w1       w2       w3       b       djdw0    djdw1    djdw2    djdw3    djdb  
+---------------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+        0 9.55884e+04  5.5e-01  1.0e-03  5.1e-04  1.2e-02  3.6e-04 -5.5e+05 -1.0e+03 -5.2e+02 -1.2e+04 -3.6e+02
+        1 1.28213e+05 -8.8e-02 -1.7e-04 -1.0e-04 -3.4e-03 -4.8e-05  6.4e+05  1.2e+03  6.2e+02  1.6e+04  4.1e+02
+        2 1.72159e+05  6.5e-01  1.2e-03  5.9e-04  1.3e-02  4.3e-04 -7.4e+05 -1.4e+03 -7.0e+02 -1.7e+04 -4.9e+02
+        3 2.31358e+05 -2.1e-01 -4.0e-04 -2.3e-04 -7.5e-03 -1.2e-04  8.6e+05  1.6e+03  8.3e+02  2.1e+04  5.6e+02
+        4 3.11100e+05  7.9e-01  1.4e-03  7.1e-04  1.5e-02  5.3e-04 -1.0e+06 -1.8e+03 -9.5e+02 -2.3e+04 -6.6e+02
+        5 4.18517e+05 -3.7e-01 -7.1e-04 -4.0e-04 -1.3e-02 -2.1e-04  1.2e+06  2.1e+03  1.1e+03  2.8e+04  7.5e+02
+        6 5.63212e+05  9.7e-01  1.7e-03  8.7e-04  1.8e-02  6.6e-04 -1.3e+06 -2.5e+03 -1.3e+03 -3.1e+04 -8.8e+02
+        7 7.58122e+05 -5.8e-01 -1.1e-03 -6.2e-04 -1.9e-02 -3.4e-04  1.6e+06  2.9e+03  1.5e+03  3.8e+04  1.0e+03
+        8 1.02068e+06  1.2e+00  2.2e-03  1.1e-03  2.3e-02  8.3e-04 -1.8e+06 -3.3e+03 -1.7e+03 -4.2e+04 -1.2e+03
+        9 1.37435e+06 -8.7e-01 -1.7e-03 -9.1e-04 -2.7e-02 -5.2e-04  2.1e+06  3.9e+03  2.0e+03  5.1e+04  1.4e+03
+w,b found by gradient descent: w: [-0.87 -0.   -0.   -0.03], b: -0.00
+"""
+# It appears the learning rate is too high. The solution does not converge. Cost is increasing rather than decreasing.
+
+# plots for one of the parameters and iterations of (w0)
+plot_cost_i_w(X_train, y_train, hist)
+
+
+
+
+# set alpha to 9e-7
+
+_,_,hist = run_gradient_descent(X_train, y_train, 10, alpha = 9e-7)
+
+# OUTPUT
+
+"""
+Iteration Cost          w0       w1       w2       w3       b       djdw0    djdw1    djdw2    djdw3    djdb  
+---------------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+        0 6.64616e+04  5.0e-01  9.1e-04  4.7e-04  1.1e-02  3.3e-04 -5.5e+05 -1.0e+03 -5.2e+02 -1.2e+04 -3.6e+02
+        1 6.18990e+04  1.8e-02  2.1e-05  2.0e-06 -7.9e-04  1.9e-05  5.3e+05  9.8e+02  5.2e+02  1.3e+04  3.4e+02
+        2 5.76572e+04  4.8e-01  8.6e-04  4.4e-04  9.5e-03  3.2e-04 -5.1e+05 -9.3e+02 -4.8e+02 -1.1e+04 -3.4e+02
+        3 5.37137e+04  3.4e-02  3.9e-05  2.8e-06 -1.6e-03  3.8e-05  4.9e+05  9.1e+02  4.8e+02  1.2e+04  3.2e+02
+        4 5.00474e+04  4.6e-01  8.2e-04  4.1e-04  8.0e-03  3.2e-04 -4.8e+05 -8.7e+02 -4.5e+02 -1.1e+04 -3.1e+02
+        5 4.66388e+04  5.0e-02  5.6e-05  2.5e-06 -2.4e-03  5.6e-05  4.6e+05  8.5e+02  4.5e+02  1.2e+04  2.9e+02
+        6 4.34700e+04  4.5e-01  7.8e-04  3.8e-04  6.4e-03  3.2e-04 -4.4e+05 -8.1e+02 -4.2e+02 -9.8e+03 -2.9e+02
+        7 4.05239e+04  6.4e-02  7.0e-05  1.2e-06 -3.3e-03  7.3e-05  4.3e+05  7.9e+02  4.2e+02  1.1e+04  2.7e+02
+        8 3.77849e+04  4.4e-01  7.5e-04  3.5e-04  4.9e-03  3.2e-04 -4.1e+05 -7.5e+02 -3.9e+02 -9.1e+03 -2.7e+02
+        9 3.52385e+04  7.7e-02  8.3e-05 -1.1e-06 -4.2e-03  8.9e-05  4.0e+05  7.4e+02  3.9e+02  1.0e+04  2.5e+02
+w,b found by gradient descent: w: [ 7.74e-02  8.27e-05 -1.06e-06 -4.20e-03], b: 0.00
+"""
+# Cost is decreasing throughout the run showing that alpha is not too large.
+
+plot_cost_i_w(X_train, y_train, hist)
+
+# you see that cost is decreasing as it should. you can see that 𝑤0 is still oscillating around the minimum, but it is decreasing each iteration
+# rather than increasing. Note above that dj_dw[0] changes sign with each iteration as w[0] jumps over the optimal value. This alpha value will converge.
+# You can vary the number of iterations to see how it behaves.
+
+
+
+
+
+# set alpha to 1e-7, trying smaller learning rate
+
+_,_,hist = run_gradient_descent(X_train, y_train, 10, alpha = 1e-7)
+"""
+Iteration Cost          w0       w1       w2       w3       b       djdw0    djdw1    djdw2    djdw3    djdb  
+---------------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+        0 4.42313e+04  5.5e-02  1.0e-04  5.2e-05  1.2e-03  3.6e-05 -5.5e+05 -1.0e+03 -5.2e+02 -1.2e+04 -3.6e+02
+        1 2.76461e+04  9.8e-02  1.8e-04  9.2e-05  2.2e-03  6.5e-05 -4.3e+05 -7.9e+02 -4.0e+02 -9.5e+03 -2.8e+02
+        2 1.75102e+04  1.3e-01  2.4e-04  1.2e-04  2.9e-03  8.7e-05 -3.4e+05 -6.1e+02 -3.1e+02 -7.3e+03 -2.2e+02
+        3 1.13157e+04  1.6e-01  2.9e-04  1.5e-04  3.5e-03  1.0e-04 -2.6e+05 -4.8e+02 -2.4e+02 -5.6e+03 -1.8e+02
+        4 7.53002e+03  1.8e-01  3.3e-04  1.7e-04  3.9e-03  1.2e-04 -2.1e+05 -3.7e+02 -1.9e+02 -4.2e+03 -1.4e+02
+        5 5.21639e+03  2.0e-01  3.5e-04  1.8e-04  4.2e-03  1.3e-04 -1.6e+05 -2.9e+02 -1.5e+02 -3.1e+03 -1.1e+02
+        6 3.80242e+03  2.1e-01  3.8e-04  1.9e-04  4.5e-03  1.4e-04 -1.3e+05 -2.2e+02 -1.1e+02 -2.3e+03 -8.6e+01
+        7 2.93826e+03  2.2e-01  3.9e-04  2.0e-04  4.6e-03  1.4e-04 -9.8e+04 -1.7e+02 -8.6e+01 -1.7e+03 -6.8e+01
+        8 2.41013e+03  2.3e-01  4.1e-04  2.1e-04  4.7e-03  1.5e-04 -7.7e+04 -1.3e+02 -6.5e+01 -1.2e+03 -5.4e+01
+        9 2.08734e+03  2.3e-01  4.2e-04  2.1e-04  4.8e-03  1.5e-04 -6.0e+04 -1.0e+02 -4.9e+01 -7.5e+02 -4.3e+01
+w,b found by gradient descent: w: [2.31e-01 4.18e-04 2.12e-04 4.81e-03], b: 0.00
+"""
+# Cost is decreasing throughout the run showing that a is not too large
+
+plot_cost_i_w(X_train,y_train,hist)
+
+# you see that cost is decreasing as it should. you can see that 𝑤0 is decreasing without crossing the minimum.
+# Note above that dj_w0 is negative throughout the run. This solution will also converge, though not quite as quickly as the previous example.
+
+
+
+
 
