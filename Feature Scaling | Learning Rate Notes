@@ -56,9 +56,9 @@ Dataset:
 
 Size (sqft)	Number of Bedrooms	Number of floors	  Age of Home	  Price (1000s dollars)
      952	          2	                  1	                65	          271.5
-     1244 	        3	                  2	                64	            232
-     1947 	        3	                  2	                17	          509.8
-      ...	...	...	...	...
+     1244 	         3	                  2	                64	            232
+     1947 	         3	                  2	                17	          509.8
+     ...	        ...	                ...	               ...	            ...
 """
 
 
