@@ -47,3 +47,7 @@ Specialization skills:
 • Build recommender systems with a collaborative filtering approach and a content-based deep learning method.
 
 • Build a deep reinforcement learning model.
+
+Resources:
+
+- https://scikit-learn.org/stable/index.html
