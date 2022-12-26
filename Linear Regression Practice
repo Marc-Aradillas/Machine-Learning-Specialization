@@ -55,9 +55,29 @@ def compute_cost(x, y, w, b):
     total_cost = 0
     
     ### START CODE HERE ###
-    h = 0
+    # variable for sum of cost from examples
+    cost_sum = 0
+    
+    # for loop to calculate cost_sum, compute_cost (cost function)
     for i in range(m):
-        h = h + 2*i
+        f_wb = w * x[i] + b
+        cost = (f_wb - y[i]) ** 2
+        cost_sum = cost_sum + cost
+    
+    # get total cost as sum divided by 2*m
+    total_cost = (1/(2 * m)) * cost_sum
     ### END CODE HERE ### 
 
     return total_cost
+
+# Compute cost with some initial values for paramaters w, b
+initial_w = 2
+initial_b = 1
+
+cost = compute_cost(x_train, y_train, initial_w, initial_b)
+print(type(cost))
+print(f'Cost at initial w: {cost:.3f}')
+
+# Public tests
+from public_tests import *
+compute_cost_test(compute_cost)
