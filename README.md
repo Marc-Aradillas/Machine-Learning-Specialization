@@ -5,19 +5,24 @@ A repository I created to store learned info and practices on the application an
 *#Python #JupyterNotebook*
 
 > Unsupervised Learning (decides that the data can be assigned to two different groups or two different clusters | Automatically finds structure in data)
+
  - Clustering (Takes data without labels and tries to automatcally group them into clusters | *ex: Google News*)
+ 
  - Anomaly Detection (Finds unusual data points)
+ 
  - Dimensionality reduction (Compress data using fewer numbers)
 
 > Supervised Learning (Learning Input, Output, or X to Y mappings)
+
  - Linear Regression (Regression Algorithms learn to predict numbers out of many possible numbers| *ex: Cost Function*)
+ 
  - Classification (*different from regression*, Classification tries to predict any number , all of the infinitely many number of possible numbers | two possible outputs. It may have more than two ouput possible categories.)
+ 
  
  ![image](https://user-images.githubusercontent.com/106922826/209678724-8587a9ba-a6ee-41ec-bbf0-10c66764be05.png)
 
  
  - Gradient Descent (optimization algorithm used to find the values of parameters (coefficients) of a function (f) that minimizes a cost function (cost)| It is used to train machine learning models and neural networks)
- - Logistic Regression
 
 ![image](https://user-images.githubusercontent.com/106922826/209475799-ed75ff5b-0fa5-4b35-9c77-f357de883e88.png)
 
@@ -33,6 +38,9 @@ A repository I created to store learned info and practices on the application an
 
 
 ![image](https://user-images.githubusercontent.com/106922826/209561231-f2cdac0e-30ed-4efa-8c16-e7e8cc409eec.png)
+
+
+- Logistic Regression
 
 
 Specialization skills: 
