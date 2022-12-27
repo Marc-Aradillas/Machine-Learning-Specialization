@@ -42,6 +42,8 @@ A repository I created to store learned info and practices on the application an
 
 - Logistic Regression
 
+![image](https://user-images.githubusercontent.com/106922826/209684040-c19a9c13-cf2a-40ce-836f-328be7787327.png)
+
 
 Specialization skills: 
 
