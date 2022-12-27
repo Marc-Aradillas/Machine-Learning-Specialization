@@ -44,6 +44,10 @@ A repository I created to store learned info and practices on the application an
 
 ![image](https://user-images.githubusercontent.com/106922826/209684040-c19a9c13-cf2a-40ce-836f-328be7787327.png) ![image](https://user-images.githubusercontent.com/106922826/209684461-6f0298db-77ae-4caa-a661-1a0565d5e794.png)
 
+![image](https://user-images.githubusercontent.com/106922826/209700728-ff13a81a-dba8-45dc-86d8-92a7b5b94b56.png)
+![image](https://user-images.githubusercontent.com/106922826/209700748-26e34430-8758-40f4-ad32-38e0bfd67549.png)
+
+
 
 
 Specialization skills: 
