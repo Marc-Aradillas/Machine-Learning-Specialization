@@ -180,3 +180,4 @@ def compute_gradient(X, y, w, b, lambda_=None):
 
 
     return dj_db, dj_dw
+
