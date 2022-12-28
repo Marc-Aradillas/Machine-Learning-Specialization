@@ -178,5 +178,5 @@ def compute_gradient(X, y, w, b, lambda_=None):
     dj_db = None
     ### END CODE HERE ###
 
-        
+
     return dj_db, dj_dw
