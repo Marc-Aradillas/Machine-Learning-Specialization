@@ -1,7 +1,5 @@
 # Cost Function for Linear Regression with one variable.
 
-
-
 import numpy as np
 %matplotlib widget
 import matplotlib.pyplot as plt
