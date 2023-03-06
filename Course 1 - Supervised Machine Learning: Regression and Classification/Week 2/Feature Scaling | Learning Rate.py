@@ -1,5 +1,3 @@
-
-
 import numpy as np
 import matplotlib.pyplot as plt
 from lab_utils_multi import  load_house_data, run_gradient_descent 
