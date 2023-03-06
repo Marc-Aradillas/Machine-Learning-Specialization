@@ -1,7 +1,7 @@
-""
+"""
 DATASET
-Let's start with the same dataset as before.
-""
+Let us start with the same dataset as before.
+"""
 import numpy as np
 ​
 X = np.array([[0.5, 1.5], [1,1], [1.5, 0.5], [3, 0.5], [2, 2], [1, 2.5]])
