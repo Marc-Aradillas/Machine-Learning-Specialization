@@ -1,4 +1,4 @@
-# Gradient Descent for Linear Regression, Automates the process of optimizing w abd b using gradient descent.
+# Gradient Descent for Linear Regression, Automates the process of optimizing w and b using gradient descent.
 
 # Tools
 import math, copy
