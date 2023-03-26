@@ -23,7 +23,7 @@ A repository I created to store learned info and practices on the application an
  - Logistic Regression
 
 
-Specialization skills: 
+## Specialization skills: 
 
 • Build machine learning models in Python using popular machine learning libraries NumPy and scikit-learn.
 
@@ -41,14 +41,14 @@ Specialization skills:
 
 • Build a deep reinforcement learning model.
 
-<a name="1"></a>
-## 1 - Packages 
+<a name="ML"></a>
+## - Packages 
 
 - [numpy](https://numpy.org/) is the fundamental package for scientific computing Python.
 - [matplotlib](http://matplotlib.org) is a popular library to plot graphs in Python.
 - [scikitlearn](https://scikit-learn.org/stable/) is a basic library for data mining
 - [tensorflow](https://www.tensorflow.org/) a popular platform for machine learning.
 
-Resources:
+#Resources:
 
 - https://scikit-learn.org/stable/index.html
