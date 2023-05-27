@@ -1,0 +1,14 @@
+Reinforcement Learning Algorithms are different compared to a neural network supervised learning algorithm.
+
+In reinforcement learning, we call the position and orientation and speed and so on of the helicopter the state s. And so the task is to 
+find a function that maps from the state of the helicopter to an action a, meaning how far to push the two control sticks in order to keep
+the helicopter balanced in the air and flying and without crashing. One way you could attempt this problem is to use supervised learning. 
+It turns out this is not a great approach for autonomous helicopter flying. But you could say, well if we could get a bunch of observations
+of states and maybe have an expert human pilot tell us what's the best action y to take. You could then train a neural network using 
+supervised learning to directly learn the mapping from the states s which I'm calling x here, to an action a which I'm calling the label y 
+here. But it turns out that when the helicopter is moving through the air is actually very ambiguous, what is the exact one right action to 
+take. Do you tilt a bit to the left or a lot more to the left or increase the helicopter stress a little bit or a lot? It's actually very 
+difficult to get a data set of x and the ideal action y. So that's why for a lot of task of controlling a robot like a helicopter and other 
+robots, the supervised learning approach doesn't work well and we instead use reinforcement learning. Now a key input to a reinforcement 
+learning is something called the reward or the reward function which tells the helicopter when it's doing well and when it's doing poorly.
+
