@@ -12,3 +12,7 @@ difficult to get a data set of x and the ideal action y. So that's why for a lot
 robots, the supervised learning approach doesn't work well and we instead use reinforcement learning. Now a key input to a reinforcement 
 learning is something called the reward or the reward function which tells the helicopter when it's doing well and when it's doing poorly.
 
+State-Cost function, also known as the Q function, (MDP) Markov decision process
+
+Bellman Equations: Q(s,a) including optimal policy following the mars rover example equation for states based of of machine actions. include the calculation
+for s' and a' or when calculating optimal value (greatest value)
