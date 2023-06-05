@@ -48,3 +48,8 @@ A repository I created to store learned info and practices on the application an
 - [matplotlib](http://matplotlib.org) is a popular library to plot graphs in Python.
 - [scikitlearn](https://scikit-learn.org/stable/) is a basic library for data mining
 - [tensorflow](https://www.tensorflow.org/) a popular platform for machine learning.
+
+## Certificate of Completion
+
+![image](https://github.com/Marc-Aradillas/Machine-Learning-Specialization/assets/106922826/f6373413-4127-45f9-b7f8-0c4cc6a06767)
+
